@@ -33,7 +33,76 @@
     <title>CharmChic {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid fixed-top bg-white">
+      <!-- Navbar -->
+      <div id="topnav" class="row bg-white p-lg-4 d-none d-lg-flex">
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+              <!-- Logo Text -->
+              <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                  <h2 class="logo-font text-dark my-0">CharmChic</h2>
+              </a>
+          </div>
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+              <form class="form" method="GET" action="">
+                  <div class="input-group w-100">
+                      <input class="form-control border border-black rounded-0" type="text" name="q"
+                             placeholder="Search pearls..." aria-label="type search term here">
+                      <div class="input-group-append">
+                          <!-- Search Bar -->
+                          <button class="form-control btn btn-black border border-black rounded-0"
+                                  type="submit" aria-label="search button">
+                              <i class="fas fa-search fa-lg"></i>
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+  
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+              <ul class="list-inline list-unstyled text-center text-lg-right my-auto">
+                  <!-- Account -->
+                  <li class="list-inline-item">
+                      <div class="dropdown-center">
+                          <button class="nav-link btn text-dark" type="button" id="user-options" data-toggle="dropdown"
+                                  aria-expanded="false" aria-label="my account">
+                              <div class="text-dark">
+                                  <p>My Account</p>
+                              </div>
+                          </button>
+                          <ul class="dropdown-menu border-0" aria-labelledby="user-options">
+                              {% if request.user.is_authenticated %}
+                              {% if request.user.is_superuser %}
+                              <li><a href="" class="dropdown-item">Product Management</a></li>
+                              {% endif %}
+                              <li><a href="" class="dropdown-item">My Profile</a></li>
+                              <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                              {% else %}
+                              <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                              <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                              {% endif %}
+                          </ul>
+                      </div>
+                  </li>
+                  <!-- Shopping Bag -->
+                  <li class="list-inline-item">
+                      <a class="nav-link{% if grand_total %} text-info font-weight-bold{% else %} text-black{% endif %}"
+                         href="{% url 'view_bag' %}">
+                          <div class="text-center">
+                              <p class="text-dark">
+                                  <i class="fas fa-shopping-basket"></i>
+                                  {% if grand_total %}
+                                  £{{ grand_total|floatformat:2 }}
+                                  {% else %}
+                                  £0.00
+                                  {% endif %}
+                              </p>
+                          </div>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </header>
 
     {% if messages %}
       <div class="message-container"></div>
