@@ -10,10 +10,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="{% static 'videos/necklace.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="container h-50 position-relative">
+        <div class="row h-50">
+            <div class="col-7 col-md-6 my-auto text-light">
+                <h1 class="display-4 logo-font">
                     Discover the Timeless Elegance of Pearls
                 </h1>
                 <div class="my-5">
