@@ -17,20 +17,21 @@
         </video>
     </div>
     
-    <div class="container h-50 position-relative">
+    <div class="container h-50 position-relative mb-5">
         <div class="row h-50">
             <div class="col-7 col-md-6 my-auto text-light">
                 <h1 class="display-4 logo-font">
                     Discover the Timeless Elegance of Pearls
                 </h1>
-                <div class="my-5">
+                <div class="my-4">
                     <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- Collection Section -->
     <div class="container my-5">
         <div class="row align-items-center">
@@ -41,8 +42,8 @@
             
             <!-- Collection Text and Button -->
             <div class="col-md-4 text-center">
-                <h2 class="logo-font">Our Pearl Collection</h2>
-                <p>Discover a timeless collection of elegant pearls, crafted for sophistication and grace.</p>
+                <h2 class="logo-font">FALL INTO PEARLS</h2>
+                <p>Explore our exquisite selection of pearls, designed to enhance your elegance and style.</p>
                 <a href="#" class="btn btn-lg btn-black text-uppercase py-3">Discover Collection</a>
             </div>
             
@@ -54,41 +55,55 @@
     </div>
     
     <!-- Shop by Category Section -->
-<div class="container my-5">
-    
-    <!-- Short Text Above Grid -->
-    <div class="row text-center my-4">
-        <div class="col">
-            <h2 class="logo-font">Explore Our Pearl Collection</h2>
-            <p>Choose from our exquisite range of necklaces, earrings, bracelets, and rings.</p>
+    <div class="pearl-bg-wrapper">
+        <div class="pearl-bg">
+            <div class="container my-5 p-4">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2 class="logo-font">Discover the Charm of Our Pearl Jewelry</h2>
+                        <p>Choose from our exquisite range of necklaces, earrings, bracelets, and rings.</p>
+                    </div>
+                </div>
+
+                <!-- Four Images in a Grid with Category Names, Description, and Ratings -->
+                <div class="row text-center my-5">
+                    <!-- Necklaces -->
+                    <div class="col-md-3 mb-4">
+                        <div class="image-hover">
+                            <img src="{% static 'images/necklaceo.webp' %}" alt="Necklaces" class="img-fluid default-img">
+                            <img src="{% static 'images/necklacet.webp' %}" alt="Necklaces Hover" class="img-fluid hover-img">
+                        </div>
+                        <p class="category-description">Beautifully crafted pearl necklaces, the essence of elegance.</p>
+                    </div>
+
+                    <!-- Earrings -->
+                    <div class="col-md-3 mb-4">
+                        <div class="image-hover">
+                            <img src="{% static 'images/eleganceo.webp' %}" alt="Earrings" class="img-fluid default-img">
+                            <img src="{% static 'images/elegancet.webp' %}" alt="Earrings Hover" class="img-fluid hover-img">
+                        </div>
+                        <p class="category-description">Elegant pearl earrings to complete any look.</p>
+                    </div>
+
+                    <!-- Bracelets -->
+                    <div class="col-md-3 mb-4">
+                        <div class="image-hover">
+                            <img src="{% static 'images/triplebracelet.webp' %}" alt="Bracelets" class="img-fluid default-img">
+                            <img src="{% static 'images/triple.webp' %}" alt="Bracelets Hover" class="img-fluid hover-img">
+                        </div>
+                        <p class="category-description">Timeless pearl bracelets, a touch of class.</p>
+                    </div>
+
+                    <!-- Rings -->
+                    <div class="col-md-3 mb-4">
+                        <div class="image-hover">
+                            <img src="{% static 'images/fwring.webp' %}" alt="Rings" class="img-fluid default-img">
+                            <img src="{% static 'images/grace.webp' %}" alt="Rings Hover" class="img-fluid hover-img">
+                        </div>
+                        <p class="category-description">Exquisite pearl rings for special occasions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <!-- Four Images in a Grid with Category Names -->
-    <div class="row text-center">
-        <!-- Necklaces -->
-        <div class="col-md-3">
-            <img src="{% static 'images/category1.jpg' %}" alt="Necklaces" class="img-fluid">
-            <h4 class="my-2">Necklaces</h4>
-        </div>
-        
-        <!-- Earrings -->
-        <div class="col-md-3">
-            <img src="{% static 'images/category2.jpg' %}" alt="Earrings" class="img-fluid">
-            <h4 class="my-2">Earrings</h4>
-        </div>
-        
-        <!-- Bracelets -->
-        <div class="col-md-3">
-            <img src="{% static 'images/category3.jpg' %}" alt="Bracelets" class="img-fluid">
-            <h4 class="my-2">Bracelets</h4>
-        </div>
-        
-        <!-- Rings -->
-        <div class="col-md-3">
-            <img src="{% static 'images/category4.jpg' %}" alt="Rings" class="img-fluid">
-            <h4 class="my-2">Rings</h4>
-        </div>
-    </div>
-</div>
 {% endblock %}

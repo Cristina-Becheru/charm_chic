@@ -41,6 +41,8 @@
   </head>
   <body>
     <header class="container-fluid fixed-top bg-white">
+        <!-- Mobile Top Header -->
+      {% include 'includes/mobile-top-header.html' %}
       <!-- Navbar -->
       <div id="topnav" class="row bg-white p-lg-4 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -73,8 +75,8 @@
                           <button class="nav-link btn text-dark" type="button" id="user-options" data-toggle="dropdown"
                                   aria-expanded="false" aria-label="my account">
                               <div class="text-dark">
-                                  <p>My Account</p>
-                              </div>
+                                <div><i class="fas fa-user fa-lg"></i></div>
+                            </div>
                           </button>
                           <ul class="dropdown-menu border-0" aria-labelledby="user-options">
                               {% if request.user.is_authenticated %}
@@ -109,7 +111,9 @@
               </ul>
           </div>
       </div>
-  </header>
+  <!-- Main Navigation -->
+  {% include 'includes/main-nav.html' %}
+</header>
 
     {% if messages %}
       <div class="message-container"></div>
