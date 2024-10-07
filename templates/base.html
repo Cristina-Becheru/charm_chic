@@ -48,7 +48,7 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <!-- Logo Text -->
               <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                  <h2 class="logo-font text-dark my-0">┃Charm Chic</h2>
+                  <h2 class="logo-font my-0">┃Charm Chic</h2>
               </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -72,7 +72,7 @@
                   <!-- Account -->
                   <li class="list-inline-item">
                       <div class="dropdown-center">
-                          <button class="nav-link btn text-dark" type="button" id="user-options" data-toggle="dropdown"
+                          <button class="nav-link btn " type="button" id="user-options" data-toggle="dropdown"
                                   aria-expanded="false" aria-label="my account">
                               <div class="text-dark">
                                 <div><i class="fas fa-user fa-lg"></i></div>
@@ -113,6 +113,12 @@
       </div>
   <!-- Main Navigation -->
   {% include 'includes/main-nav.html' %}
+  <div id="delivery-banner" class="row text-center">
+    <div class="col bg-black text-white">
+        <h4 class="logo-font my-1">Celebrate Elegance – Enjoy 20% Off All Pearl Pieces!</h4>               
+    </div>            
+</div>
+
 </header>
 
     {% if messages %}

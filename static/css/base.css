@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    color: #555;
+    
+    color: #36454F; /* Charcoal Black */
     font-family: 'Babylonica';
      
 }
@@ -11,39 +12,51 @@ body {
 .nav-link {
     text-transform: uppercase; /* Make text uppercase */
     font-size: 1.2rem; /* Adjust font size as needed */
-    color: #000; /* Default text color */
-   
-    
+    color: #36454F; /* Charcoal Black */ 
+
 }
 
 .nav-link:hover {
-   color: #0056b3; /* Change color on hover (Bootstrap primary color) */
+   color:color: #6B7C8A; /* Change color on hover (Bootstrap primary color) */
 }
 
-/* Video Background Styles */
+/* Header Section */
+.header-section {
+    position: relative;
+    height: 100vh; /* Full height for the header section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
 .video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
     overflow: hidden;
-    z-index: -1; 
-    margin-bottom: 1rem;
 }
 
 .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; 
-    transform: translate(-50%, -50%); 
-    object-fit: cover; 
+    transform: translate(-50%, -50%);
 }
+
+/* Collection Section */
+.collection-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
 
 /* from Bulma */
 .icon {
@@ -56,7 +69,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    color: #333; 
+    color: #36454F; /* Charcoal Black */
     margin-bottom: 1rem; 
     
 }
@@ -66,7 +79,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background:#36454F; /* Charcoal Black */
     color: white;
     min-width: 240px;
     border-radius: 25px;
@@ -79,17 +92,12 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background:  #6B7C8A;
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
-}
 
-.border-black {
-    border: 1px solid black !important;
-}
+
 
 /* Collection Section Styles */
 
@@ -111,12 +119,12 @@ body {
 
 .row p {
     font-size: 1.25rem; /* Adjusts the font size for the paragraph */
-    color: #555; /* Sets a softer color for the paragraph */
+    color: #36454F; /* Charcoal Black */ /* Sets a softer color for the paragraph */
     margin-bottom: 1.5rem; /* Adds space below the paragraph */
 }
 
 .btn.btn-black {
-    background-color: #000; /* Black background for the button */
+    background-color: #36454F; /* Charcoal Black */
     color: #fff; /* White text for the button */
     border: none; /* Removes border */
     border-radius: 25px; /* Adds rounded corners to the button */
@@ -125,7 +133,7 @@ body {
 }
 
 .btn.btn-black:hover {
-    background-color: #333; /* Darker shade on hover */
+    background-color: #6B7C8A;
 }
 
 
@@ -185,6 +193,9 @@ body {
 .category-description {
     font-size: 0.9rem; /* Adjust font size as needed */
     margin-top: 5px; /* Space above description */
+}
+.bg-black {
+    background: #EAEAEA;
 }
 
 

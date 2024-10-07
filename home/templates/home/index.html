@@ -10,20 +10,22 @@
 {% endblock %}
 
 {% block content %}
+<!-- Header Section with Video -->
+<header class="header-section">
     <div class="video-background">
         <video autoplay muted loop>
             <source src="{% static 'videos/necklace.mp4' %}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    
-    <div class="container h-50 position-relative mb-5">
+
+    <div class="container h-50 position-relative mb-4">
         <div class="row h-50">
             <div class="col-7 col-md-6 my-auto text-light">
                 <h1 class="display-4 logo-font">
-                    Discover the Timeless Elegance of Pearls
+                    Elevate your style with the timeless grace of pearls
                 </h1>
-                <div class="my-4">
+                <div class="my-3">
                     <h4>
                         <a href="" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
                     </h4>
@@ -31,8 +33,10 @@
             </div>
         </div>
     </div>
-    
-    <!-- Collection Section -->
+</header>
+
+<!-- Collection Section Below Video -->
+<section class="collection-section">
     <div class="container my-5">
         <div class="row align-items-center">
             <!-- Left Image -->
@@ -53,6 +57,9 @@
             </div>
         </div>
     </div>
+</section>
+
+
     
     <!-- Shop by Category Section -->
     <div class="pearl-bg-wrapper">
@@ -106,4 +113,5 @@
             </div>
         </div>
     </div>
+
 {% endblock %}
