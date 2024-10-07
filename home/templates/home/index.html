@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -27,7 +27,7 @@
                 </h1>
                 <div class="my-3">
                     <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
+                        <a href="#" class="shop-now-button btn btn-lg rounded text-uppercase py-3">Shop Now</a>
                     </h4>
                 </div>
             </div>
@@ -43,14 +43,14 @@
             <div class="col-md-4">
                 <img src="{% static 'images/leftimage.jpg' %}" alt="Left Image" class="img-fluid">
             </div>
-            
+
             <!-- Collection Text and Button -->
             <div class="col-md-4 text-center">
                 <h2 class="logo-font">FALL INTO PEARLS</h2>
                 <p>Explore our exquisite selection of pearls, designed to enhance your elegance and style.</p>
                 <a href="#" class="btn btn-lg btn-black text-uppercase py-3">Discover Collection</a>
             </div>
-            
+
             <!-- Right Image -->
             <div class="col-md-4">
                 <img src="{% static 'images/rightimage.jpg' %}" alt="Right Image" class="img-fluid">
@@ -59,59 +59,106 @@
     </div>
 </section>
 
+<!-- Shop by Category Section -->
+<div class="pearl-bg-wrapper">
+    <div class="pearl-bg">
+        <div class="container my-5 p-4">
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="logo-font">Categories Jewelry</h2>
+                    <p>Choose from our exquisite range of necklaces, earrings, bracelets, and rings.</p>
+                </div>
+            </div>
 
-    
-    <!-- Shop by Category Section -->
-    <div class="pearl-bg-wrapper">
-        <div class="pearl-bg">
-            <div class="container my-5 p-4">
-                <div class="row text-center">
-                    <div class="col">
-                        <h2 class="logo-font">Discover the Charm of Our Pearl Jewelry</h2>
-                        <p>Choose from our exquisite range of necklaces, earrings, bracelets, and rings.</p>
+            <!-- Four Images in a Grid with Category Names -->
+            <div class="row text-center my-5">
+                <!-- Necklaces -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="image-hover position-relative">
+                        <img src="{% static 'images/necklaceo.webp' %}" alt="Necklaces" class="img-fluid default-img">
+                        <img src="{% static 'images/necklacet.webp' %}" alt="Necklaces Hover"
+                            class="img-fluid hover-img">
+                        <h5 class="category-title">
+                            <a href="#" class="category-link">Necklaces</a>
+                        </h5>
                     </div>
                 </div>
 
-                <!-- Four Images in a Grid with Category Names, Description, and Ratings -->
-                <div class="row text-center my-5">
-                    <!-- Necklaces -->
-                    <div class="col-md-3 mb-4">
-                        <div class="image-hover">
-                            <img src="{% static 'images/necklaceo.webp' %}" alt="Necklaces" class="img-fluid default-img">
-                            <img src="{% static 'images/necklacet.webp' %}" alt="Necklaces Hover" class="img-fluid hover-img">
-                        </div>
-                        <p class="category-description">Beautifully crafted pearl necklaces, the essence of elegance.</p>
+                <!-- Earrings -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="image-hover position-relative">
+                        <img src="{% static 'images/eleganceo.webp' %}" alt="Earrings" class="img-fluid default-img">
+                        <img src="{% static 'images/elegancet.webp' %}" alt="Earrings Hover"
+                            class="img-fluid hover-img">
+                        <h5 class="category-title">
+                            <a href="#" class="category-link">Earrings</a>
+                        </h5>
                     </div>
+                </div>
 
-                    <!-- Earrings -->
-                    <div class="col-md-3 mb-4">
-                        <div class="image-hover">
-                            <img src="{% static 'images/eleganceo.webp' %}" alt="Earrings" class="img-fluid default-img">
-                            <img src="{% static 'images/elegancet.webp' %}" alt="Earrings Hover" class="img-fluid hover-img">
-                        </div>
-                        <p class="category-description">Elegant pearl earrings to complete any look.</p>
+                <!-- Bracelets -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="image-hover position-relative">
+                        <img src="{% static 'images/triplebracelet.webp' %}" alt="Bracelets"
+                            class="img-fluid default-img">
+                        <img src="{% static 'images/triple.webp' %}" alt="Bracelets Hover" class="img-fluid hover-img">
+                        <h5 class="category-title">
+                            <a href="#" class="category-link">Bracelets</a>
+                        </h5>
                     </div>
+                </div>
 
-                    <!-- Bracelets -->
-                    <div class="col-md-3 mb-4">
-                        <div class="image-hover">
-                            <img src="{% static 'images/triplebracelet.webp' %}" alt="Bracelets" class="img-fluid default-img">
-                            <img src="{% static 'images/triple.webp' %}" alt="Bracelets Hover" class="img-fluid hover-img">
-                        </div>
-                        <p class="category-description">Timeless pearl bracelets, a touch of class.</p>
-                    </div>
-
-                    <!-- Rings -->
-                    <div class="col-md-3 mb-4">
-                        <div class="image-hover">
-                            <img src="{% static 'images/fwring.webp' %}" alt="Rings" class="img-fluid default-img">
-                            <img src="{% static 'images/grace.webp' %}" alt="Rings Hover" class="img-fluid hover-img">
-                        </div>
-                        <p class="category-description">Exquisite pearl rings for special occasions.</p>
+                <!-- Rings -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="image-hover position-relative">
+                        <img src="{% static 'images/fwring.webp' %}" alt="Rings" class="img-fluid default-img">
+                        <img src="{% static 'images/grace.webp' %}" alt="Rings Hover" class="img-fluid hover-img">
+                        <h5 class="category-title">
+                            <a href="#" class="category-link">Rings</a>
+                        </h5>
                     </div>
                 </div>
             </div>
+
+            <!-- Services Section -->
+            <div class="service-grid my-5">
+                <h2 class="services-title">Our Services</h2>
+                <div class="service-items-container">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-shipping-fast"></i> <!-- Font Awesome Delivery Icon -->
+                        </div>
+                        <h4>Free Delivery on Any Order</h4>
+                        <p>Treat yourself or your loved ones today. Experience the luxury with our natural pearls and
+                            benefit from free delivery.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-gift"></i> <!-- Font Awesome Gift Icon -->
+                        </div>
+                        <h4>Free Gift Wrapping</h4>
+                        <p>In addition to the perfect elegance of CharmChic creations, the unique design of our jewelry
+                            box adds an additional touch of luxury.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-spray-can"></i> <!-- Font Awesome Cleaning Icon -->
+                        </div>
+                        <h4>Cleaning & Maintenance</h4>
+                        <p>CharmChic offers cleaning services for our jewelry. For details, please contact us.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i> <!-- Font Awesome Unique Icon -->
+                        </div>
+                        <h4>100% Unique Products</h4>
+                        <p>Each piece of jewelry we create is unique and handcrafted, with care and attention to detail,
+                            to guarantee the quality and originality of each piece.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
+</div>
 {% endblock %}

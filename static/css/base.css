@@ -194,12 +194,120 @@ body {
     font-size: 0.9rem; /* Adjust font size as needed */
     margin-top: 5px; /* Space above description */
 }
-.bg-black {
-    background: #EAEAEA;
+.category-title {
+    position: absolute;
+    bottom: 10px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #36454F; /* Charcoal Black */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Optional: adds a shadow effect for better visibility */
+    text-transform: uppercase; 
+}
+
+.category-link {
+    text-decoration: none; /* Remove underline from link */
+    color: #36454F; /* Charcoal Black */ /* Set link color to Charcoal Black */
+    display: inline-block; /* Ensures padding and hover effects work properly */
+    position: relative; /* Positioning for the hover effect */
+    padding: 5px; /* Adds some space around the text */
+}
+
+/* Hover effect for desktop */
+.category-link:hover {
+    text-decoration: none; /* Keep underline removal on hover */
+    color: #333; /* Slightly darker on hover */
+}
+
+/* Focus effect for mobile and accessibility */
+.category-link:focus {
+    color: #333; /* Change color on focus (for mobile taps) */
+}
+
+/* Optional: Additional visual feedback for mobile */
+.category-link:focus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust for spacing */
+    height: 2px; /* Thickness of the border */
+    background-color: #36454F; /* Border color */
+    transition: height 0.3s; /* Smooth transition */
+}
+
+.category-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust for spacing */
+    height: 0; /* Hide border by default */
+    background-color: #36454F; /* Border color */
+    transition: height 0.3s; /* Smooth transition */
+}
+
+.category-link:hover::after,
+.category-link:focus::after {
+    height: 2px; /* Show border on hover/focus */
 }
 
 
-/* -------------------------------- Media Queries */
+
+.bg-black {
+    background: #EAEAEA;
+}
+.service-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Space between items */
+    margin: 50px 0; /* Vertical spacing */
+}
+
+.services-title {
+    font-size: 28px; /* Title font size */
+    color: #333333; /* Charcoal black for title */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.service-items-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+    justify-content: center; /* Center items horizontally */
+    gap: 40px; /* Space between items */
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center the content */
+    text-align: center; /* Center the text */
+    max-width: 200px; /* Set a maximum width for items */
+}
+
+.service-icon {
+    font-size: 40px; /* Size of the icons */
+    color: #C8B68B; /* Muted Gold */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+h4 {
+    font-size: 24px; /* Font size for headings */
+    color: #333333; /* Charcoal black for headings */
+    margin: 10px 0; /* Margin around heading */
+}
+
+p {
+    font-size: 18px; /* Font size for paragraphs */
+    color: #666666; /* Medium gray for paragraph text */
+    line-height: 1.6; /* Line height for readability */
+}
+
+
+
+
+/* Responsive adjustments */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -220,5 +328,15 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+@media (max-width: 768px) {
+    .service-grid {
+        flex-direction: column; /* Ensure the title remains at the top */
+    }
+
+    .service-item {
+        flex: 1; /* Allow items to grow and take up space */
+        width: 100%; /* Full width on smaller screens */
     }
 }
