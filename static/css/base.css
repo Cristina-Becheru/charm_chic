@@ -8,22 +8,34 @@ body {
     font-family: 'Babylonica';
      
 }
+
+h4 {
+    font-size: 20px; 
+    color: #1F2A30; 
+    margin: 10px 0; 
+}
+
+p {
+    font-size: 18px; 
+    color: #36454F; 
+    line-height: 1.6; 
+}
 /* CSS for Navigation Links */
 .nav-link {
-    text-transform: uppercase; /* Make text uppercase */
-    font-size: 1.2rem; /* Adjust font size as needed */
-    color: #36454F; /* Charcoal Black */ 
+    text-transform: uppercase; 
+    font-size: 1.2rem; 
+    color: #36454F; 
 
 }
 
 .nav-link:hover {
-   color:color: #6B7C8A; /* Change color on hover (Bootstrap primary color) */
+   color:color: #6B7C8A; 
 }
 
 /* Header Section */
 .header-section {
     position: relative;
-    height: 100vh; /* Full height for the header section */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,24 +64,17 @@ body {
 }
 
 /* Collection Section */
+
 .collection-section {
     padding: 50px 0;
     background-color: white;
 }
 
 
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
 
 .logo-font {
     text-transform: uppercase;
-    color: #36454F; /* Charcoal Black */
+    color: #36454F; 
     margin-bottom: 1rem; 
     
 }
@@ -79,7 +84,7 @@ body {
 }
 
 .shop-now-button {
-    background:#36454F; /* Charcoal Black */
+    background:#36454F; 
     color: white;
     min-width: 240px;
     border-radius: 25px;
@@ -98,38 +103,33 @@ body {
 
 
 
-
-/* Collection Section Styles */
-
-
-
 /* Image Styles */
 .row img {
-    max-width: 100%; /* Ensures images are responsive */
-    border-radius: 10px; /* Adds rounded corners to images */
-    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    max-width: 100%; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
 }
 
 .row img:hover {
-    transform: scale(1.05); /* Slightly enlarges images on hover */
+    transform: scale(1.05); 
 }
 
 /* Text and Button Styles */
 
 
 .row p {
-    font-size: 1.25rem; /* Adjusts the font size for the paragraph */
-    color: #36454F; /* Charcoal Black */ /* Sets a softer color for the paragraph */
-    margin-bottom: 1.5rem; /* Adds space below the paragraph */
+    font-size: 1.25rem; 
+    color: #36454F; 
+    margin-bottom: 1.5rem; 
 }
 
 .btn.btn-black {
-    background-color: #36454F; /* Charcoal Black */
-    color: #fff; /* White text for the button */
-    border: none; /* Removes border */
-    border-radius: 25px; /* Adds rounded corners to the button */
-    padding: 10px 20px; /* Adjusts padding for the button */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    background-color: #36454F; 
+    color: #fff; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
 }
 
 .btn.btn-black:hover {
@@ -139,35 +139,35 @@ body {
 
 /* Overall Section Background Color for Pearls */
 .pearl-bg-wrapper {
-    background-color: #f9f8f4; /* Soft pearl-like background */
-    padding: 20px 0; /* Padding on top and bottom */
+    background-color: #f9f8f4; 
+    padding: 20px 0; 
 }
 
 /* Container for the pearl background */
 .pearl-bg {
-    max-width: 1500px; /* Adjust max-width based on your design */
-    margin: 0 auto; /* Center the content */
-    padding: 0px; /* Padding inside the content container */
-    border-radius: 8px; /* Optional if you want rounded corners */
+    max-width: 1500px; 
+    margin: 0 auto;
+    padding: 0px; 
+    border-radius: 8px; 
 }
 
 /* Increase the size of images in the grid */
 .row .col-md-3 {
-    padding: 0 10px; /* Optional padding between columns */
+    padding: 0 10px; 
 }
 
 .image-hover {
     position: relative;
-    overflow: hidden; /* Hide overflow to keep images clean */
-    border-radius: 8px; /* Optional: rounded corners for the images */
+    overflow: hidden; 
+    border-radius: 8px; 
 }
 
 .default-img {
-    width: 100%; /* Make images fill their parent container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 250px; /* Set a maximum height for images */
-    object-fit: cover; /* Ensure images cover the area without stretching */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%; 
+    height: auto; 
+    max-height: 250px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
 }
 
 .hover-img {
@@ -176,51 +176,51 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the hover image covers the area */
+    object-fit: cover;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+    transition: opacity 0.3s ease; 
 }
 
 .image-hover:hover .default-img {
-    transform: scale(1.1); /* Zoom in on hover */
+    transform: scale(1.1); 
 }
 
 .image-hover:hover .hover-img {
-    opacity: 1; /* Show hover image */
+    opacity: 1; 
 }
 
 /* Optional: Adjust h4 for better visibility */
 .category-description {
-    font-size: 0.9rem; /* Adjust font size as needed */
-    margin-top: 5px; /* Space above description */
+    font-size: 0.9rem; 
+    margin-top: 5px; 
 }
 .category-title {
     position: absolute;
-    bottom: 10px; /* Adjust this value as needed */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
-    color: #36454F; /* Charcoal Black */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Optional: adds a shadow effect for better visibility */
+    color: #36454F;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); 
     text-transform: uppercase; 
 }
 
 .category-link {
-    text-decoration: none; /* Remove underline from link */
-    color: #36454F; /* Charcoal Black */ /* Set link color to Charcoal Black */
-    display: inline-block; /* Ensures padding and hover effects work properly */
-    position: relative; /* Positioning for the hover effect */
-    padding: 5px; /* Adds some space around the text */
+    text-decoration: none; 
+    color: #36454F; 
+    display: inline-block; 
+    position: relative; 
+    padding: 5px; 
 }
 
 /* Hover effect for desktop */
 .category-link:hover {
-    text-decoration: none; /* Keep underline removal on hover */
-    color: #333; /* Slightly darker on hover */
+    text-decoration: none; 
+    color: #333; 
 }
 
 /* Focus effect for mobile and accessibility */
 .category-link:focus {
-    color: #333; /* Change color on focus (for mobile taps) */
+    color: #333;
 }
 
 /* Optional: Additional visual feedback for mobile */
@@ -229,10 +229,10 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2px; /* Adjust for spacing */
-    height: 2px; /* Thickness of the border */
-    background-color: #36454F; /* Border color */
-    transition: height 0.3s; /* Smooth transition */
+    bottom: -2px; 
+    height: 2px; 
+    background-color: #36454F; 
+    transition: height 0.3s; 
 }
 
 .category-link::after {
@@ -240,15 +240,15 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2px; /* Adjust for spacing */
-    height: 0; /* Hide border by default */
-    background-color: #36454F; /* Border color */
-    transition: height 0.3s; /* Smooth transition */
+    bottom: -2px; 
+    height: 0; 
+    background-color: #36454F; 
+    transition: height 0.3s; 
 }
 
 .category-link:hover::after,
 .category-link:focus::after {
-    height: 2px; /* Show border on hover/focus */
+    height: 2px; 
 }
 
 
@@ -258,52 +258,108 @@ body {
 }
 .service-grid {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    gap: 20px; /* Space between items */
-    margin: 50px 0; /* Vertical spacing */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    margin: 50px 0; 
 }
 
 .services-title {
-    font-size: 28px; /* Title font size */
-    color: #333333; /* Charcoal black for title */
-    text-align: center; /* Center the title */
-    margin-bottom: 20px; /* Space below the title */
+    font-size: 28px; 
+    color: #333333; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .service-items-container {
     display: flex;
-    flex-wrap: wrap; /* Wrap items to the next line if necessary */
-    justify-content: center; /* Center items horizontally */
-    gap: 40px; /* Space between items */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px;
 }
 
 .service-item {
     display: flex;
-    flex-direction: column; /* Stack icon and text vertically */
-    align-items: center; /* Center the content */
-    text-align: center; /* Center the text */
-    max-width: 200px; /* Set a maximum width for items */
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    max-width: 200px; 
 }
 
 .service-icon {
-    font-size: 40px; /* Size of the icons */
-    color: #C8B68B; /* Muted Gold */
-    margin-bottom: 15px; /* Space below the icon */
+    font-size: 50px; 
+    color: #C8B68B; 
+    margin-bottom: 15px; 
 }
 
-h4 {
-    font-size: 24px; /* Font size for headings */
-    color: #333333; /* Charcoal black for headings */
-    margin: 10px 0; /* Margin around heading */
+
+/* Footer */
+.footer-section {
+    padding: 40px 0;
+    color: #36454F; 
 }
 
-p {
-    font-size: 18px; /* Font size for paragraphs */
-    color: #666666; /* Medium gray for paragraph text */
-    line-height: 1.6; /* Line height for readability */
+.footer-title {
+    font-size:20px;
+    margin-bottom:20px;
+    color:#36454F; 
 }
 
+.footer-subscribe-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer-subscribe-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #36454F;
+    border-radius: 10px;
+}
+
+/* Quiq links */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color:#36454F;  
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Social media links */
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-social li {
+    margin-right: 15px;
+}
+
+.footer-social a {
+    color: #36454F; 
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #6B7C8A;
+}
 
 
 
@@ -332,11 +388,11 @@ p {
 }
 @media (max-width: 768px) {
     .service-grid {
-        flex-direction: column; /* Ensure the title remains at the top */
+        flex-direction: column; 
     }
 
     .service-item {
-        flex: 1; /* Allow items to grow and take up space */
-        width: 100%; /* Full width on smaller screens */
+        flex: 1; 
+        width: 100%; 
     }
 }
