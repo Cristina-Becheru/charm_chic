@@ -17,8 +17,8 @@
         "model": "products.product",
         "fields": {
             "sku": "j002",
-            "name": "White Pearl Necklace - Three Strand",
-            "description": "Three-strand white pearl necklace for a classic and sophisticated look.",
+            "name": "White Pearl Necklace",
+            "description": "White pearl necklace for a classic and sophisticated look.",
             "price": 200.00,
             "category": 1,
             "image": "whitenthree.jpg",
@@ -33,7 +33,7 @@
             "name": "Black Pearl Drop Earrings",
             "description": "Sophisticated earrings with rare black pearls, adding elegance to any outfit.",
             "price": 85.00,
-            "category": 3,
+            "category": 2,
             "image": "blackeone.jpg",
             "rating": 4.0
         }
@@ -46,7 +46,7 @@
             "name": "Golden Pearl Ring",
             "description": "Stylish golden pearl ring, ideal for special occasions.",
             "price": 150.00,
-            "category": 2,
+            "category": 4,
             "image": "goldenrone.jpg",
             "rating": 4.9
         }
@@ -58,8 +58,8 @@
             "sku": "j005",
             "name": "Pink Pearl Necklace",
             "description": "Delicate necklace with soft pink pearls, ideal for daily wear.",
-            "price": 130.00,
-            "category": 4,
+            "price": 230.00,
+            "category": 1,
             "image": "pinknecklaceone.jpg",
             "rating": 4.4
         }
@@ -69,9 +69,9 @@
         "model": "products.product",
         "fields": {
             "sku": "j006",
-            "name": "White Floral Pearl Earrings",
-            "description": "Beautiful floral earrings with pearls and crystal accents.",
-            "price": 95.00,
+            "name": "Classic Golden White Pearl Bracelet",
+            "description": "Elegant bracelet with a single large golden pearl, perfect for a sophisticated look.",
+            "price":  110.00,
             "category": 3,
             "image": "whitebfour.jpg",
             "rating": 4.6
@@ -84,8 +84,8 @@
             "sku": "j007",
             "name": "Pink Pearl Drop Earrings",
             "description": "Elegant drop earrings with pink pearls, ideal for a pop of color.",
-            "price": 70.00,
-            "category": 3,
+            "price": 120.00,
+            "category": 2,
             "image": "pinkeone.jpg",
             "rating": 4.3
         }
@@ -98,7 +98,7 @@
             "name": "Golden Pearl Bracelet",
             "description": "Sophisticated golden pearl bracelet for a touch of luxury.",
             "price": 110.00,
-            "category": 4,
+            "category": 3,
             "image": "goldenbone.jpg",
             "rating": 4.7
         }
@@ -111,7 +111,7 @@
             "name": "Black Pearl Ring",
             "description": "Stylish ring featuring a striking black pearl.",
             "price": 140.00,
-            "category": 2,
+            "category": 4,
             "image": "blackrtwo.jpg",
             "rating": 4.2
         }
@@ -124,29 +124,17 @@
             "name": "White Double Pearl Ring",
             "description": "Minimalist ring featuring two white pearls for a modern look.",
             "price": 175.00,
-            "category": 2,
+            "category": 4,
             "image": "whitertwo.jpg",
             "rating": 4.8
         }
     },
+    
     {
         "pk": 11,
         "model": "products.product",
         "fields": {
             "sku": "j011",
-            "name": "Golden Pearl Choker",
-            "description": "A stylish choker with a single golden pearl, perfect for any outfit.",
-            "price": 180.00,
-            "category": 4,
-            "image": "goldenbone.jpg",
-            "rating": 4.5
-        }
-    },
-    {
-        "pk": 12,
-        "model": "products.product",
-        "fields": {
-            "sku": "j012",
             "name": "Pink Pearl Bracelet",
             "description": "Lovely pink pearl bracelet that adds a touch of elegance.",
             "price": 95.00,
@@ -156,49 +144,24 @@
         }
     },
     {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+        "sku": "j012",
+        "name": "White Pearl Bracelet",
+        "description": "Elegant bracelet with high-quality white pearls and a decorative clasp.",
+        "price": 95.00,
+        "category": 3,
+        "image": "whitebone.jpg",
+        "rating": 4.6
+        }
+    },
+   
+    {
         "pk": 13,
         "model": "products.product",
         "fields": {
             "sku": "j013",
-            "name": "White Pearl Earrings",
-            "description": "Classic white pearl stud earrings, a must-have accessory.",
-            "price": 60.00,
-            "category": 1,
-            "image": "whitebone.jpg",
-            "rating": 4.4
-        }
-    },
-    {
-        "pk": 14,
-        "model": "products.product",
-        "fields": {
-            "sku": "j014",
-            "name": "Golden Twist Ring",
-            "description": "Golden ring with a unique twist design and pearls.",
-            "price": 120.00,
-            "category": 2,
-            "image": "goldenrone.jpg",
-            "rating": 4.6
-        }
-    },
-    {
-        "pk": 15,
-        "model": "products.product",
-        "fields": {
-            "sku": "j015",
-            "name": "Pink Pearl Drop Necklace",
-            "description": "Elegant necklace with a single pink pearl drop.",
-            "price": 150.00,
-            "category": 3,
-            "image": "pinkntwo.jpg",
-            "rating": 4.7
-        }
-    },
-    {
-        "pk": 16,
-        "model": "products.product",
-        "fields": {
-            "sku": "j016",
             "name": "Vintage Golden Pearl Bracelet",
             "description": "Chic bracelet featuring vintage-style golden pearls.",
             "price": 125.00,
@@ -207,17 +170,57 @@
             "rating": 4.2
         }
     },
+    
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "j014",
+            "name": "Golden Pearl Drop Earrings",
+            "description": "Elegant drop earrings featuring beautiful golden pearls.",
+            "price": 80.00,
+            "category": 2,
+            "image": "goldenetwo.jpg",
+            "rating": 4.7
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+        "sku": "j015",
+        "name": "Golden Pearl Necklace",
+        "description": "Elegant necklace featuring a full strand of golden pearls, ideal for formal occasions.",
+        "price": 220.00,
+        "category": 1,
+        "image": "goldnthree.jpg",
+        "rating": 4.8
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+        "sku": "j016",
+        "name": "White Pearl Drop Earrings",
+        "description": "Elegant drop earrings with classic white pearls, ideal for adding sophistication to any outfit.",
+        "price": 90.00,
+        "category": 2,
+        "image": "whiteethree.jpg",
+        "rating": 4.2
+        }
+    },
     {
         "pk": 17,
         "model": "products.product",
         "fields": {
             "sku": "j017",
-            "name": "Classic White Pearl Necklace",
-            "description": "Elegant necklace with high-quality white pearls.",
-            "price": 160.00,
-            "category": 1,
-            "image": "whitenthree.jpg",
-            "rating": 4.8
+            "name": "Silver Pink Pearl Ring",
+            "description": "Elegant ring with a pink pearl centerpiece in a stylish silver setting.",
+            "price": 95.00,
+            "category": 4,
+            "image": "pinkrone.jpg",
+            "rating": 4.3
         }
     },
     {
@@ -225,25 +228,26 @@
         "model": "products.product",
         "fields": {
             "sku": "j018",
-            "name": "Black Pearl Bracelet",
-            "description": "Bold bracelet featuring stunning black pearls.",
-            "price": 130.00,
-            "category": 3,
-            "image": "blackrthree.jpg",
-            "rating": 4.5
+            "name": "Elegant Golden Pearl Chain Necklace",
+            "description": "Sleek necklace with golden pearls set on a delicate gold chain, perfect for a touch of sophistication.",
+            "price": 160.00,
+            "category": 1,
+            "image": "goldnone.jpg",
+            "rating": 4.6
         }
     },
+
     {
         "pk": 19,
         "model": "products.product",
         "fields": {
             "sku": "j019",
-            "name": "White Pearl Floral Earrings",
-            "description": "Beautiful floral earrings adorned with white pearls.",
-            "price": 70.00,
-            "category": 2,
-            "image": "whitebfour.jpg",
-            "rating": 4.6
+            "name": "Triple-Strand White Pearl Bracelet",
+            "description": "Elegant triple-strand bracelet with lustrous white pearls and a secure clasp for added sophistication.",
+            "price": 85.00,
+            "category": 3,
+            "image": "whitebthree.jpg",
+            "rating": 4.4
         }
     },
     {
@@ -251,12 +255,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j020",
-            "name": "Black Pearl Studs",
-            "description": "Chic and minimalist black pearl stud earrings.",
-            "price": 55.00,
+            "name": "Classic White Pearl Stud Earrings",
+            "description": "Elegant and timeless stud earrings featuring high-quality white pearls, perfect for any occasion.",
+            "price": 140.00,
             "category": 2,
-            "image": "blackrtwo.jpg",
-            "rating": 4.4
+            "image": "whiteeone.jpg",
+            "rating": 4.8
         }
     },
     {
@@ -264,12 +268,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j021",
-            "name": "Golden Pearl Necklace",
-            "description": "Elegant necklace with multiple golden pearls.",
-            "price": 145.00,
+            "name": "Pink Pearl Layered Bracelet",
+            "description": "A layered bracelet featuring beautiful pink pearls.",
+            "price": 130.00,
             "category": 3,
-            "image": "goldenetwo.jpg",
-            "rating": 4.7
+            "image": "pinkbtwo.jpg",
+            "rating": 4.3
         }
     },
     {
@@ -277,12 +281,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j022",
-            "name": "Pink Pearl Studs",
-            "description": "Soft pink pearl studs, ideal for a subtle pop of color.",
-            "price": 65.00,
-            "category": 2,
-            "image": "pinkeone.jpg",
-            "rating": 4.5
+            "name": "Pink Pearl Pendant Necklace",
+            "description": "Dainty necklace with a single pink pearl pendant.",
+            "price": 215.00,
+            "category": 1,
+            "image": "pinkntwo.jpg",
+            "rating": 4.4
         }
     },
     {
@@ -290,11 +294,11 @@
         "model": "products.product",
         "fields": {
             "sku": "j023",
-            "name": "Golden Pearl Ring",
-            "description": "Stunning ring with a single golden pearl.",
-            "price": 175.00,
-            "category": 2,
-            "image": "goldnthree.jpg",
+            "name": "Golden Pearl Luxury Ring",
+            "description": "Exquisite ring featuring a radiant golden pearl, accented with delicate floral motifs and sparkling stones.",
+            "price": 130.00,
+            "category": 4,
+            "image": "goldenrthree.jpg",
             "rating": 4.9
         }
     },
@@ -303,38 +307,39 @@
         "model": "products.product",
         "fields": {
             "sku": "j024",
-            "name": "White Pearl Hoop Earrings",
-            "description": "Hoop earrings featuring delicate white pearls.",
-            "price": 90.00,
-            "category": 3,
-            "image": "whiteethree.jpg",
-            "rating": 4.2
+            "name": "Elegant Pink Pearl Drop Earrings",
+            "description": "Sophisticated drop earrings featuring lustrous pink pearls and delicate gold detailing, perfect for any occasion.",
+            "price": 180.00,
+            "category": 2,
+            "image": "pinkethree.jpg",
+            "rating": 4.5
         }
     },
     {
-        "pk": 25,
-        "model": "products.product",
-        "fields": {
+       "pk": 25,
+       "model": "products.product",
+       "fields": {
             "sku": "j025",
-            "name": "Golden Pearl Pendant Necklace",
-            "description": "Unique necklace with a golden pearl pendant.",
-            "price": 190.00,
-            "category": 3,
-            "image": "goldnthree.jpg",
+            "name": "Black Pearl Diamond Ring",
+            "description": "A luxurious ring featuring a stunning black pearl surrounded by a diamond-studded band.",
+            "price": 535.00,
+            "category": 4,
+            "image": "blackrthree.jpg",
             "rating": 4.8
         }
     },
+
     {
         "pk": 26,
         "model": "products.product",
         "fields": {
             "sku": "j026",
-            "name": "Pink Pearl Drop Earrings",
-            "description": "Drop earrings with beautiful pink pearls.",
-            "price": 75.00,
-            "category": 2,
-            "image": "pinkrone.jpg",
-            "rating": 4.3
+            "name": "White Pearl Halo Ring",
+            "description": "Beautiful ring with a white pearl surrounded by a halo of gems.",
+            "price": 140.00,
+            "category": 4,
+            "image": "whiterfour.jpg",
+            "rating": 4.9
         }
     },
     {
@@ -342,25 +347,26 @@
         "model": "products.product",
         "fields": {
             "sku": "j027",
-            "name": "Classic Golden Pearl Necklace",
-            "description": "A classic necklace featuring golden pearls.",
-            "price": 160.00,
+            "name": "Minimalist Pink Pearl Necklace",
+            "description": "Elegant single pink pearl necklace on a delicate chain, perfect for subtle elegance.",
+            "price": 170.00,
             "category": 3,
-            "image": "goldnone.jpg",
-            "rating": 4.6
+            "image": "pinknthree.jpg",
+            "rating": 4.7
         }
     },
+    
     {
         "pk": 28,
         "model": "products.product",
         "fields": {
             "sku": "j028",
-            "name": "Vintage Black Pearl Ring",
-            "description": "Vintage-style ring with a striking black pearl.",
-            "price": 155.00,
-            "category": 2,
-            "image": "blackrtwo.jpg",
-            "rating": 4.7
+            "name": "Golden Pearl Diamond Accent Ring",
+            "description": "Elegant ring featuring a golden pearl with sparkling diamonds along the band, adding a touch of luxury.",
+            "price": 410.00,
+            "category": 4,
+            "image": "goldenrtwo.jpg",
+            "rating": 4.8
         }
     },
     {
@@ -368,38 +374,40 @@
         "model": "products.product",
         "fields": {
             "sku": "j029",
-            "name": "Elegant White Pearl Choker",
-            "description": "Choker with a single white pearl, great for minimalist style.",
-            "price": 125.00,
-            "category": 4,
+            "name": "Floral White Pearl Drop Earrings",
+            "description": "Elegant drop earrings featuring floral designs with white pearls and sparkling diamond accents, perfect for a sophisticated look.",
+            "price": 195.00,
+            "category": 2,
             "image": "whiteetwo.jpg",
-            "rating": 4.5
+            "rating": 4.7
         }
     },
+   
     {
         "pk": 30,
         "model": "products.product",
         "fields": {
             "sku": "j030",
-            "name": "Classic White Pearl Bracelet",
-            "description": "Timeless bracelet featuring high-quality white pearls.",
-            "price": 85.00,
+            "name": "White Pearl Halo Ring",
+            "description": "Elegant ring showcasing a large white pearl encircled by a halo of sparkling diamonds, perfect for a statement look.",
+            "price": 625.00,
             "category": 4,
-            "image": "whitebthree.jpg",
-            "rating": 4.4
+            "image": "whiterone.jpg",
+            "rating": 4.9
         }
     },
-    {
+
+ {
         "pk": 31,
         "model": "products.product",
         "fields": {
             "sku": "j031",
-            "name": "Elegant Pink Pearl Necklace",
-            "description": "Beautiful pink pearl necklace perfect for adding a soft touch to any outfit.",
-            "price": 135.00,
-            "category": 3,
-            "image": "pinknecklaceone.jpg",
-            "rating": 4.6
+            "name": "Black Pearl Choker Necklace",
+            "description": "Chic black pearl choker for a minimalist look.",
+            "price": 75.00,
+            "category": 1,
+            "image": "blacknthree.jpg",
+            "rating": 4.5
         }
     },
     {
@@ -407,12 +415,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j032",
-            "name": "White Pearl Drop Earrings",
-            "description": "Simple yet elegant drop earrings with white pearls.",
-            "price": 70.00,
-            "category": 2,
-            "image": "whiteetwo.jpg",
-            "rating": 4.5
+            "name": "Gold-Linked Black Pearl Necklace",
+            "description": "Elegant black pearl necklace with a golden chain.",
+            "price": 250.00,
+            "category": 1,
+            "image": "blackntwo.jpg",
+            "rating": 4.7
         }
     },
     {
@@ -420,12 +428,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j033",
-            "name": "Golden Pearl Necklace",
-            "description": "Sophisticated golden pearl necklace, ideal for formal occasions.",
-            "price": 160.00,
-            "category": 3,
-            "image": "goldrtwo.jpg",
-            "rating": 4.7
+            "name": "Classic Black Pearl Ring",
+            "description": "Stylish ring with a single black pearl centerpiece.",
+            "price": 105.00,
+            "category": 4,
+            "image": "blackrone.jpg",
+            "rating": 4.8
         }
     },
     {
@@ -433,12 +441,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j034",
-            "name": "White Pearl Flower Earrings",
-            "description": "Floral earrings with white pearls and sparkling accents.",
-            "price": 90.00,
-            "category": 2,
-            "image": "whiteeone.jpg",
-            "rating": 4.8
+            "name": "Golden Pearl Bracelet",
+            "description": "Sophisticated bracelet featuring golden pearls.",
+            "price": 140.00,
+            "category": 3,
+            "image": "goldenbthree.jpg",
+            "rating": 4.6
         }
     },
     {
@@ -446,11 +454,11 @@
         "model": "products.product",
         "fields": {
             "sku": "j035",
-            "name": "Pink Pearl Layered Bracelet",
-            "description": "A layered bracelet featuring beautiful pink pearls.",
-            "price": 95.00,
-            "category": 4,
-            "image": "pinkbtwo.jpg",
+            "name": "Delicate Black Pearl Bracelet",
+            "description": "A refined bracelet featuring multiple black pearls on a gold chain.",
+            "price": 165.00,
+            "category": 3,
+            "image": "blackbone.jpg",
             "rating": 4.3
         }
     },
@@ -459,12 +467,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j036",
-            "name": "Black Pearl Stud Earrings",
-            "description": "Elegant black pearl studs, ideal for any occasion.",
-            "price": 75.00,
-            "category": 2,
-            "image": "blackrtwo.jpg",
-            "rating": 4.6
+            "name": "Black Pearl Leather Bracelet",
+            "description": "A sleek bracelet with a single black pearl on a leather band, combining elegance with modern style.",
+            "price": 150.00,
+            "category": 3,
+            "image": "blackbthree.jpg",
+            "rating": 4.7
         }
     },
     {
@@ -472,12 +480,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j037",
-            "name": "White Pearl Double Ring",
-            "description": "Stylish ring with two white pearls on a gold band.",
-            "price": 105.00,
-            "category": 2,
-            "image": "whitertwo.jpg",
-            "rating": 4.8
+            "name": "Double Black Pearl Bracelet",
+            "description": "Simple and chic double black pearl bracelet.",
+            "price": 190.00,
+            "category": 3,
+            "image": "blackbtwo.jpg",
+            "rating": 4.4
         }
     },
     {
@@ -485,12 +493,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j038",
-            "name": "Pink Pearl Pendant Necklace",
-            "description": "Dainty necklace with a single pink pearl pendant.",
-            "price": 115.00,
-            "category": 3,
-            "image": "pinkntwo.jpg",
-            "rating": 4.4
+            "name": "Geometric Black Pearl Drop Earrings",
+            "description": "Stunning drop earrings featuring black pearls and a geometric gold and diamond-accented design.",
+            "price": 485.00,
+            "category": 2,
+            "image": "blackethree.jpg",
+            "rating": 4.5
         }
     },
     {
@@ -498,12 +506,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j039",
-            "name": "Golden Pearl Flower Ring",
-            "description": "Intricate flower-shaped ring with a golden pearl center.",
-            "price": 130.00,
+            "name": "Baroque Black Pearl Dangle Earrings",
+            "description": "Bold dangle earrings featuring striking baroque black pearls, adding an artisanal touch to any outfit.",
+            "price": 150.00,
             "category": 2,
-            "image": "goldrthree.jpg",
-            "rating": 4.9
+            "image": "blacketwo.jpg",
+            "rating": 4.8
         }
     },
     {
@@ -511,12 +519,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j040",
-            "name": "Pink Pearl Cluster Earrings",
-            "description": "Earrings with a charming cluster of pink pearls.",
-            "price": 80.00,
-            "category": 2,
-            "image": "pinkethree.jpg",
-            "rating": 4.5
+            "name": "Black Pearl Strand Necklace",
+            "description": "Classic black pearl necklace, timeless elegance.",
+            "price": 275.00,
+            "category": 1,
+            "image": "blacknone.jpg",
+            "rating": 4.9
         }
     },
     {
@@ -524,12 +532,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j041",
-            "name": "Classic White Pearl Choker",
-            "description": "Timeless white pearl choker with a single centerpiece pearl.",
-            "price": 140.00,
-            "category": 3,
-            "image": "whiteethree.jpg",
-            "rating": 4.6
+            "name": "Golden Pearl Hoop Earrings",
+            "description": "Elegant hoop earrings with golden pearls and sparkling accents, perfect for sophisticated looks.",
+            "price": 160.00,
+            "category": 2,
+            "image": "goldenethree.jpg",
+            "rating": 4.7
         }
     },
     {
@@ -537,12 +545,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j042",
-            "name": "Black Pearl Pendant Necklace",
-            "description": "Elegant necklace featuring a single black pearl.",
-            "price": 135.00,
-            "category": 3,
-            "image": "blackrthree.jpg",
-            "rating": 4.4
+            "name": "Golden Pearl Pendant Necklace",
+            "description": "Simple and chic necklace featuring a single golden pearl on a delicate leather cord.",
+            "price": 180.00,
+            "category": 1,
+            "image": "goldntwo.jpg",
+            "rating": 4.6
         }
     },
     {
@@ -550,11 +558,11 @@
         "model": "products.product",
         "fields": {
             "sku": "j043",
-            "name": "Golden Pearl Drop Earrings",
-            "description": "Charming drop earrings with golden pearls.",
-            "price": 85.00,
-            "category": 2,
-            "image": "goldnone.jpg",
+            "name": "Pink Pearl Beaded Bracelet",
+            "description": "Beautiful bracelet with radiant pink pearls, adding a soft touch of color to any outfit.",
+            "price": 140.00,
+            "category": 3,
+            "image": "pinkbone.jpg",
             "rating": 4.5
         }
     },
@@ -563,12 +571,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j044",
-            "name": "White Pearl Halo Ring",
-            "description": "Beautiful ring with a white pearl surrounded by a halo of gems.",
-            "price": 140.00,
+            "name": "Pink Pearl Stud Earrings",
+            "description": "Delicate pink pearl stud earrings, perfect for subtle elegance.",
+            "price": 95.00,
             "category": 2,
-            "image": "whiterfour.jpg",
-            "rating": 4.9
+            "image": "pinketwo.jpg",
+            "rating": 4.4
         }
     },
     {
@@ -576,12 +584,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j045",
-            "name": "Pink Pearl Statement Necklace",
-            "description": "Bold necklace featuring multiple pink pearls.",
-            "price": 170.00,
-            "category": 3,
-            "image": "pinknthree.jpg",
-            "rating": 4.7
+            "name": "Pink Pearl Ring with Crystals",
+            "description": "A stunning ring featuring a lustrous pink pearl, accented with sparkling crystals.",
+            "price": 150.00,
+            "category": 4,
+            "image": "pinkrtwo.jpg",
+            "rating": 4.9
         }
     },
     {
@@ -589,12 +597,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j046",
-            "name": "White Pearl Hoop Earrings",
-            "description": "Elegant hoop earrings adorned with white pearls.",
-            "price": 110.00,
-            "category": 2,
-            "image": "whitebthree.jpg",
-            "rating": 4.6
+            "name": "White Pearl Beaded Bracelet",
+            "description": "Elegant beaded bracelet featuring a central white pearl, offering a minimalist yet timeless look.",
+            "price": 175.00,
+            "category": 4,
+            "image": "whitebtwo.jpg",
+            "rating": 4.8
         }
     },
     {
@@ -602,12 +610,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j047",
-            "name": "Golden Pearl Baroque Necklace",
-            "description": "Luxurious necklace with baroque golden pearls.",
-            "price": 190.00,
-            "category": 3,
-            "image": "goldenrtwo.jpg",
-            "rating": 4.8
+            "name": "White Pearl Hoop Earrings",
+            "description": "Elegant hoop earrings crafted with white pearls, perfect for a modern, timeless look.",
+            "price": 125.00,
+            "category": 2,
+            "image": "whiteefour.jpg",
+            "rating": 4.7
         }
     },
     {
@@ -615,12 +623,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j048",
-            "name": "White Pearl Stud Earrings",
-            "description": "Classic white pearl studs, perfect for any occasion.",
-            "price": 65.00,
-            "category": 2,
-            "image": "whiteetwo.jpg",
-            "rating": 4.7
+            "name": "White Pearl Multi-Strand Necklace",
+            "description": "An elegant multi-strand necklace adorned with lustrous white pearls, perfect for a classic look.",
+            "price": 145.00,
+            "category": 1,
+            "image": "whitenfour.jpg",
+            "rating": 4.6
         }
     },
     {
@@ -628,12 +636,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j049",
-            "name": "Pink Pearl Bracelet",
-            "description": "Delicate bracelet with soft pink pearls.",
-            "price": 85.00,
-            "category": 3,
-            "image": "pinkbtwo.jpg",
-            "rating": 4.5
+            "name": "White Pearl Strand Necklace",
+            "description": "Classic strand necklace with lustrous white pearls, perfect for any occasion.",
+            "price": 200.00,
+            "category": 1,
+            "image": "whitentwo.jpg",
+            "rating": 4.9
         }
     },
     {
@@ -641,12 +649,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j050",
-            "name": "White Pearl Flower Ring",
-            "description": "Unique ring featuring a floral design with white pearls.",
-            "price": 125.00,
-            "category": 2,
-            "image": "whiterone.jpg",
-            "rating": 4.9
+            "name": "Carved White Pearl Ring",
+            "description": "Unique ring featuring a beautifully carved white pearl, perfect for statement style.",
+            "price": 160.00,
+            "category": 4,
+            "image": "whiterthree.jpg",
+            "rating": 4.8
         }
     },
     {
@@ -654,12 +662,12 @@
         "model": "products.product",
         "fields": {
             "sku": "j051",
-            "name": "Classic Golden Pearl Bracelet",
-            "description": "A timeless bracelet adorned with golden pearls.",
-            "price": 115.00,
-            "category": 3,
-            "image": "goldenrone.jpg",
-            "rating": 4.6
+            "name": "Golden Pearl Hoop Earrings",
+            "description": "Elegant hoop earrings featuring radiant golden pearls for a sophisticated look.",
+            "price": 160.00,
+            "category": 2,
+            "image": "goldeneone.jpg",
+            "rating": 4.8
         }
     }
 ]
