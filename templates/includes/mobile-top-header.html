@@ -1,6 +1,12 @@
-<!-- mobile-top-header.html -->
+<!-- Mobile Top Header -->
 <div class="container-fluid d-lg-none bg-light">
-    <div class="row justify-content-around py-2">
+    <div class="row justify-content-between py-2">
+        <!-- Toggle Button for Dropdown -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Search Icon -->
         <li class="list-inline-item">
             <a class="text-black nav-link" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
@@ -24,6 +30,7 @@
             </div>
         </li>
 
+        <!-- User Options Dropdown -->
         <li class="list-inline-item dropdown">
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
@@ -45,6 +52,7 @@
             </div>
         </li>
 
+        <!-- Shopping Bag Icon -->
         <li class="list-inline-item">
             <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                 <div class="text-center">
@@ -59,5 +67,15 @@
                 </div>
             </a>
         </li>
+    </div>
+
+    <!-- Collapsible Navbar -->
+    <div class="collapse" id="mobileNavbar">
+        <ul class="list-inline text-center">
+            <li class="list-inline-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#">Trending</a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#">About</a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
     </div>
 </div>

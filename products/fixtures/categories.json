@@ -1,0 +1,106 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "shop_jewelry_type",
+            "friendly_name": "Shop by Jewelry Type"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "necklace",
+            "friendly_name": "Necklaces"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "earrings",
+            "friendly_name": "Earrings"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "bracelet",
+            "friendly_name": "Bracelets"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "ring",
+            "friendly_name": "Rings"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "shop_color",
+            "friendly_name": "Shop by Color"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "white_pearls",
+            "friendly_name": "White Pearl Jewelry"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "black_pearls",
+            "friendly_name": "Black Pearl Jewelry"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "pink_pearls",
+            "friendly_name": "Pink Pearl Jewelry"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "golden_pearls",
+            "friendly_name": "Golden Pearl Jewelry"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "trending",
+            "friendly_name": "Trending"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "fields": {
+            "name": "best_sellers",
+            "friendly_name": "Best Sellers"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    }
+]
