@@ -11,94 +11,107 @@
         "pk": 2,
         "model": "products.category",
         "fields": {
-            "name": "necklace",
-            "friendly_name": "Necklaces"
+            "name": "shop_color",
+            "friendly_name": "Shop by Color"
         }
     },
     {
         "pk": 3,
         "model": "products.category",
         "fields": {
+            "name": "trending",
+            "friendly_name": "Trending"
+        }
+    },
+
+    {
+        "pk": 4,
+        "model": "products.subcategory",
+        "fields": {
+            "category": 1,
+            "name": "necklace",
+            "friendly_name": "Necklaces"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.subcategory",
+        "fields": {
+            "category": 2,
             "name": "earrings",
             "friendly_name": "Earrings"
         }
     },
     {
-        "pk": 4,
-        "model": "products.category",
+        "pk": 6,
+        "model": "products.subcategory",
         "fields": {
+            "category": 3,
             "name": "bracelet",
             "friendly_name": "Bracelets"
         }
     },
     {
-        "pk": 5,
-        "model": "products.category",
+        "pk": 7,
+        "model": "products.subcategory",
         "fields": {
+            "category": 4,
             "name": "ring",
             "friendly_name": "Rings"
         }
     },
+
     {
-        "pk": 6,
-        "model": "products.category",
+        "pk": 8,
+        "model": "products.subcategory",
         "fields": {
-            "name": "shop_color",
-            "friendly_name": "Shop by Color"
-        }
-    },
-    {
-        "pk": 7,
-        "model": "products.category",
-        "fields": {
+            "category": 5,
             "name": "white_pearls",
             "friendly_name": "White Pearl Jewelry"
         }
     },
     {
-        "pk": 8,
-        "model": "products.category",
+        "pk": 9,
+        "model": "products.subcategory",
         "fields": {
+            "category": 6,
             "name": "black_pearls",
             "friendly_name": "Black Pearl Jewelry"
         }
     },
     {
-        "pk": 9,
-        "model": "products.category",
+        "pk": 10,
+        "model": "products.subcategory",
         "fields": {
+            "category": 7,
             "name": "pink_pearls",
             "friendly_name": "Pink Pearl Jewelry"
         }
     },
     {
-        "pk": 10,
-        "model": "products.category",
+        "pk": 11,
+        "model": "products.subcategory",
         "fields": {
+            "category": 8,
             "name": "golden_pearls",
             "friendly_name": "Golden Pearl Jewelry"
         }
     },
-    {
-        "pk": 11,
-        "model": "products.category",
-        "fields": {
-            "name": "trending",
-            "friendly_name": "Trending"
-        }
-    },
+
     {
         "pk": 12,
-        "model": "products.category",
+        "model": "products.subcategory",
         "fields": {
+            "category": 9,
             "name": "best_sellers",
             "friendly_name": "Best Sellers"
         }
     },
     {
         "pk": 13,
-        "model": "products.category",
+        "model": "products.subcategory",
         "fields": {
+            "category": 10,
             "name": "new_arrivals",
             "friendly_name": "New Arrivals"
         }
