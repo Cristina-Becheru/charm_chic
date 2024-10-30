@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<!-- Page Header -->
+<div class="container header-container mt-5">
+    <div class="row">
+        <div class="col text-center">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Product Image Section -->
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 my-4">
+            <div class="image-container mb-3">
+                {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid mb-2" src="{{ product.image.url }}" alt="{{ product.name }} - Main Image">
+                    </a>
+                {% else %}
+                    <a href="#">
+                        <img class="card-img-top img-fluid mb-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }} - Main Image">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="col-12 col-md-6 col-lg-4 my-5">
+            <div class="product-details">
+                <p class="mb-0 text-uppercase">{{ product.name }}</p>
+                <p class="lead mt-0 text-left">£{{ product.price }}</p>
+                {% if product.rating %}
+                <p class="text-warning product-rating">
+                    {% for i in "12345" %}
+                        <i class="fas fa-star{% if i > product.rating|stringformat:"d" %}-o{% endif %}"></i>
+                    {% endfor %}
+                    <small class="text-muted">({{ product.rating }} / 5)</small></p>
+            {% else %}
+                <p class="text-muted">No Rating</p>
+            {% endif %}
+            <hr class="my-2">
+            <p class="mt-2 text-uppercase">Product Description</p>
+            <p class="mb-0">{{ product.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
